@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+h1{
+    font-size: 35px;
+	font-weight: bold;
+}
 
-h1 {
-    color: blue;
+h2{
+    font-size: 20px;
+	font-weight: bold;
 }
 
 body{
-    background: #f6f5f7;
-    font-family: 'Montserrat', sans-serif;
+    background: white;
+    font-family: 'Poppins', sans-serif;
     color: #3E363F;
 }
 
@@ -34,12 +41,12 @@ body{
 }
 
 #detalle{
-    background: #FF416C;
+    background: #B2DDEA;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
     float: left;
-    color: #f6f5f7;
+    color: black;
 }
 
 .contenido{
@@ -64,8 +71,8 @@ button {
 	font-weight: bold;
 	padding: 12px 45px;
 	border-radius: 30px;
-	background-color: #FF416C;
-	border: 1px solid #FF416C;
+	background-color: #2F92B1;
+	border: 1px solid #2F92B1;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -83,9 +90,9 @@ button:active {
 }
 
 .resultado{
-    color: #0A81D1;
+    color: #1A4774;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 5px;
     display: none;
 }

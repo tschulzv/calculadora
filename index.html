@@ -4,28 +4,35 @@
 <html>
 	<head>
         <title>Calculadora de hidratación</title>
-        <link rel="stylesheet" href="./style.css"
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
     </head>
 	<body>
         <div id="contenedor">
             <div id="calculadora">
                 <div class="contenido">
                     <h1>Hidratación Basal</h1>
-                    <input class="item" id="peso" type="number" placeholder="Peso en kg" />
+                    <input class="item" id="peso" type="number" placeholder="Ingrese el peso en kg." />
                     <p class="item" id="error"> * Debe completar todos los datos</p>
-                    <button class="item">Calcular</button>
-                    <p class="item resultado" id="flu">71cc/h</p>
-                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+                    <button class="item" id="calcular">Calcular</button>
+                    <p class="resultado" id="metodo">Metodo</p>
+                    <p class="resultado" id="volumen">cc</p>
+                    <p class="resultado" id="volumen2">cc</p>
+                    <p class="resultado" id="flu">71cc/h</p>
+                    <p class="resultado" id="man">m+m/2 : 105cc/h</p>
                 </div>
             </div>
             <div id="detalle">
                 <div class="contenido">
-                    <h1 style="color: #f6f5f7">¿Como se calcula?</h1>
+                    <h1 style="color: black">¿Como se calcula?</h1>
+                    <h2 style="color: black"> Menos de 30 kg: Método de Holliday-Seagar</h2>
                     <ul class="lista">
                         <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
                         <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
                         <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
                     </ul>
+                    <h2 style="color: black"> Mas de 30 kg: Superficie Corporal </h2>
+                    <p> Superficie corporal = ((peso * 4) + 7) / (peso + 90)</p>
                 </div>
             </div>
         </div>
