@@ -11,7 +11,7 @@
         <div id="contenedor">
             <div id="calculadora">
                 <div class="contenido">
-                    <h1>Hidratacion Basal</h1>
+                    <h1 id="titulo-principal">HIDRATACION BASAL</h1>
                     <input class="item" id="peso" type="number" placeholder="Ingrese el peso en kg." />
                     <p class="item" id="error"> * Debe completar todos los datos</p>
                     <button class="item" id="calcular">Calcular</button>
@@ -42,7 +42,7 @@
                     <h1 style="color: black">¿Como se calcula?</h1>
                     <details id="seagar">
                         <summary>Menos de 30 kg: Metodo de Holliday-Segar</summary>
-                        <ul class="lista">
+                        <ul class="lista descripcion">
                             <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
                             <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
                             <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
@@ -50,7 +50,7 @@
                     </details>
                     <details id="sc">
                         <summary>Mas de 30 kg: Superficie Corporal</summary>
-                        SC = ((peso * 4) + 7) / (peso + 90)
+                        <p class="descripcion">SC = ((peso * 4) + 7) / (peso + 90)</p>
                     </details>
                    
                 </div>
