@@ -28,7 +28,7 @@ function mostrarError(){
     PVOLUMEN2.style.display = 'none';
     METODO.style.display = 'none';   
 }
-//MOSTRAR.addEventListener('click', DETALLE.style.display = block);
+
 CALCULAR.addEventListener('click', ()=> {    
     if (INPUT.value.trim() === ''){
         mostrarError();
@@ -104,9 +104,5 @@ function calcVolumen(peso){
 
 function calcFlujo(volumen){
         return Math.round(volumen / 24);
-   /* }
-    else {
-        return 1500*(Math.round(((peso * 4) + 7) / (peso + 90)))
-    }*/
 }
 
